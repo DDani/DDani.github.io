@@ -1,0 +1,6 @@
+body { background:#27292b; color:#fff; font-size:24px;}
+h1, h2, h3, h4, h5, h6 { color:#fff;}
+body a { color:#fff; text-decoration:none;}
+body a:hover { color:#ffc000;}
+body i { font-size:48px; margin:0 10px;}
+.snapshots img { display:block; margin:0 auto 15px auto;}
