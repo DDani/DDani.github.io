@@ -48,37 +48,6 @@
 .social-icons li a {
 	background-color:transparent;
 }
-.social-icons li.aim a {
-	background: url("http://www.asvada.com/themes/applum-v1.2/images/icons/aim.png") no-repeat 0 0;
-}
-.social-icons li.aim a:hover {
-	background-color: #e95a00;
-}
-.social-icons li.apple a {
-	background: url("http://www.asvada.com/themes/applum-v1.2/images/icons/apple.png") no-repeat 0 0;
-}
-.social-icons li.apple a:hover {
-	background-color: #606060;
-}
-.social-icons li.behance a {
-	background: url("http://www.asvada.com/themes/applum-v1.2/images/icons/behance.png") no-repeat 0 0;
-}
-.social-icons li.behance a:hover {
-	background-color: #18a3fe;
-}
-.social-icons li.blogger a {
-	background: url("http://www.asvada.com/themes/applum-v1.2/images/icons/blogger.png") no-repeat 0 0;
-}
-.social-icons li.blogger a:hover {
-	background-color: #fb913f;
-}
-.social-icons li.cargo a {
-	background: url("http://www.asvada.com/themes/applum-v1.2/images/icons/cargo.png") no-repeat 0 0;
-}
-.
-.social-icons li.delicious a {
-	background: url("http://www.asvada.com/themes/applum-v1.2/images/icons/delicious.png") no-repeat 0 0;
-}
 .social-icons li.facebook a {
 	background: url("../images/icons/facebook.png") no-repeat 0 0;
 }
@@ -168,9 +137,6 @@
 }
 .social-icons li.vimeo a:hover {
 	background-color: #62a0ad;
-}
-.social-icons li.wordpress a {
-	background: url("http://www.asvada.com/themes/applum-v1.2/images/icons/wordpress.png") no-repeat 0 0;
 }
 .social-icons li.wordpress a:hover {
 	background-color: #464646;
