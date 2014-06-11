@@ -18,11 +18,7 @@
 
         <link href="css/style.css" rel="stylesheet" id="global-styles"><!-- Global Styles -->
         <link href="css/themes/yellow.css" rel="stylesheet" id="color-theme" title="styles1"><!-- Color Theme -->
-        
-        <link href="css/color-switcher.css" rel="stylesheet" id="color-switcher"><!-- Color Switcher -->
-        <link rel="stylesheet" id="switch_scheme" href="index.html#"><!--Color Scheme Picker-->
-        
-    
+     
         
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -50,7 +46,7 @@
             <img src="images/backgrounds/productividad_bg.png" width="1" height="1" />
             <img src="images/backgrounds/productividad_grafica.png" width="1" height="1" />
             <img src="images/backgrounds/head-style2.png" width="1" height="1" />
-            <img src="images/backgrounds/testimonials.png" width="1" height="1" />
+<!--            <img src="images/backgrounds/testimonials.png" width="1" height="1" /> -->
         </div>
         
     	<!-- BACK TO TOP -->
@@ -209,7 +205,7 @@
                     </div>
                     <div class="row">
                     	<div class="col-md-12 text-center">
-                        	<a href="index.html#howcanwehelp"class="btn btn-dark">Prueba HappyForce!&nbsp;<i class="fa  fa-arrow-circle-o-right"></i></a></p>
+                        	<a href="http://dashboard.myhappyforce.com/#/register"class="btn btn-dark">Prueba HappyForce!&nbsp;<i class="fa  fa-arrow-circle-o-right"></i></a></p>
                         </div>
                 </div>
               
@@ -297,7 +293,7 @@
                     </div>
                     <div class="row">
                     	<div class="col-md-12 text-center">
-                        	<a href="index.html#howcanwehelp" class="btn btn-dark">Prueba HappyForce!&nbsp;<i class="fa fa-arrow-circle-o-right"></i></a><p></p>
+                        	<a href="http://dashboard.myhappyforce.com/#/register" class="btn btn-dark">Prueba HappyForce!&nbsp;<i class="fa fa-arrow-circle-o-right"></i></a><p></p>
                         </div>
                 </div>
               
@@ -382,7 +378,7 @@
                     <div class="col-md-6 col-md-push-6">
                         <h3>Ahora tu también puedes dar un <strong>giro</strong> a la gestión de los rrhh de tu empresa</h3>
                         
-                        <a href="index.html#subscribe" data-scroll="subscribe" class="btn btn-dark">Registrate Ahora!</a>
+                        <a href="http://dashboard.myhappyforce.com/#/register" data-scroll="subscribe" class="btn btn-dark">Registrate Ahora!</a>
                       
                         <!-- Description Text -->
                         <h5>Tus empleados podran votar a traves de la applicadion de Happy Force para: </h5>
@@ -392,6 +388,7 @@
                         <div class="stores text-center">
                             <a href="index.html#"><img src="images/stores/appstore.png" alt="" /></a>
                             <a href="index.html#"><img src="images/stores/google.png" alt="" /></a>
+                             <a href="index.html#"><img src="images/stores/google.png" alt="" /></a>
                             <!--
                             <a href="index.html#"><img src="images/stores/windows.png" alt="" /></a>
                             -->
@@ -511,7 +508,9 @@
                 <div class="loader"></div>
 				<div class="bar"></div>
 
-                <form action="http://getsimpleform.com/messages?form_api_token=503632e4b28fa3f481ee8ce8b69d4e84" role="form" class="animate slideUp-onload contactForm" name="cform" method="post">
+	            <h5 class="subtext, contactFormResult" style="display: none;">Gracias por contactar con nosotros, en breve nos pondremos en contacto contigo</h5>
+
+                <form id="contactForm" action="javascript:void(0);" method="post" role="form" class="animate slideUp-onload contactForm" name="cform">
                     <div class="row">
                         <div class="col-md-4 col-md-offset-2 form-group">
                             <input type="email" name="email" id="e-mail" class="form-control" placeholder="Direccion de Correo">
@@ -584,7 +583,8 @@
         
         <!-- jQuery Plugin -->
         <script type="text/javascript" src="js/jquery-latest.min.js"></script>
-        
+        <script type="text/javascript" src="js/jquery.jsonp-2.4.0.min.js"></script>
+
         <!-- Include all compiled plugins below, or include individual files as needed -->
         <script type="text/javascript" src="js/jquery.queryloader2.min.js"></script><!-- Page Loading -->
         <script type="text/javascript" src="js/bootstrap.min.js"></script><!-- bootstrap -->

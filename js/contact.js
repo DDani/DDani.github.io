@@ -1,29 +1,4 @@
 $(document).ready(function(){
-	 
-	//run contact form when any contact link is clicked
-	$(".contact").click(function(){contact()});
-	
-	//animation for same page links #
-	$('a[href*=#]').each(function() {
-		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-		&& location.hostname == this.hostname
-		&& this.hash.replace(/#/,'') ) {
-		  var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
-		  var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
-			if ($(this.hash).length) {
-				$(this).click(function(event) {
-					var targetOffset = $(this.hash).offset().top;
-					var target = this.hash;
-					event.preventDefault();			   
-					$('html, body').animate({scrollTop: targetOffset}, 500);
-					return false;
-				});
-			}
-		}
-	});
-
-
-
    //submission scripts
   $('.contactForm').submit( function(){
 		//statements to validate the form	
@@ -49,24 +24,40 @@ $(document).ready(function(){
 			//show the loading bar
 			$('.loader').append($('.bar'));
 			$('.bar').css({display:'block'});
-		
-			//send the ajax request
-			$.post('mail.php',{name:$('#name').val(),
-							  email:$('#e-mail').val(),
-							  message:$('#message').val()},
-		
-			//return the data
-			function(data){
-			  //hide the graphic
-			  $('.bar').css({display:'none'});
-			  $('.loader').append(data);
-			});
-			
-			//waits 2000, then closes the form and fades out
-			setTimeout('$("#backgroundPopup").fadeOut("slow"); $("#contactForm").slideUp("slow")', 2000);
-			
-			//stay on the page
-			return false;
+
+            var message = $('#message').val();
+            var name = $('#name').val();
+            var email = $('#e-mail').val();
+
+            // Execute the JSONP request to submit the ticket
+            $.jsonp({
+                url: 'https://myhappyforce.uservoice.com/api/v1/tickets/create_via_jsonp.json?callback=?',
+                data: {
+                    client: 'TPDy3Asa9APJa6vRi9MYkQ',
+                    ticket: {
+                        message: message,
+                        subject: 'Contacto desde el formulario de producto'
+                    },
+                    name: name,
+                    email: email
+                },
+                success: function(data) {
+                    $('.bar').css({display:'none'});
+                    $('.loader').append(data);
+                    setTimeout('$("#backgroundPopup").fadeOut("slow"); $("#contactForm").slideUp("slow")', 2000);
+                    //hide the graphic
+                    $('.contactFormResult').show();
+                },
+                error: function(d, msg) {
+                    $('.bar').css({display:'none'});
+                    $('.loader').append(data);
+                    alert("Error enviando formulario. Por favor, escriba a info@myhappyforce.com");  // Darn -- something went wrong.  You might want to display a message to the user.
+                }
+            });
+
+            return false;
+
+
 		} 
   });
 	//only need force for IE6  

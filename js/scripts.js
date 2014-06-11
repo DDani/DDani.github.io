@@ -157,13 +157,13 @@ $(window).scroll(function() {
 
 });
 
-//Gallery Slider
+/*//Gallery Slider
 $('#gallery-slider').bxSlider({
     slideWidth: 316,
     minSlides: 1,
     maxSlides: 4,
     slideMargin: 0
-  });
+  });*/
  
 //Scroll Navigation
 $('a').on('click', function() {
