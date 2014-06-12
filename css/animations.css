@@ -1124,6 +1124,7 @@ stretchRight
 		-webkit-transform: scaleX(1);
 	}		
 }
+
 .animate {
-    visibility: hidden;
+    visibility: visible;
 }

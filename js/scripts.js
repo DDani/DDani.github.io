@@ -112,7 +112,7 @@ autoPlay: 3000
 $(window).scroll(function() {
 	$('.fadeIn-onload').each(function(){
 	var imagePos = $(this).offset().top;
-	
+
 	var topOfWindow = $(window).scrollTop();
 		if (imagePos < topOfWindow+600) {
 			$(this).addClass("fadeIn");
@@ -121,7 +121,7 @@ $(window).scroll(function() {
 
 	$('.slideLeft-onload').each(function(){
 	var imagePos = $(this).offset().top;
-	
+
 	var topOfWindow = $(window).scrollTop();
 		if (imagePos < topOfWindow+600) {
 			$(this).addClass("slideLeft");
@@ -130,30 +130,30 @@ $(window).scroll(function() {
 
 	$('.slideRight-onload').each(function(){
 	var imagePos = $(this).offset().top;
-	
+
 	var topOfWindow = $(window).scrollTop();
 		if (imagePos < topOfWindow+600) {
 			$(this).addClass("slideRight");
 		}
-	});	
-	
+	});
+
 	$('.slideUp-onload').each(function(){
 	var imagePos = $(this).offset().top;
-	
+
 	var topOfWindow = $(window).scrollTop();
 		if (imagePos < topOfWindow+600) {
 			$(this).addClass("slideUp");
 		}
-	});		
+	});
 
 	$('.slideDown-onload').each(function(){
 	var imagePos = $(this).offset().top;
-	
+
 	var topOfWindow = $(window).scrollTop();
 		if (imagePos < topOfWindow+600) {
 			$(this).addClass("slideDown");
 		}
-	});		
+	});
 
 });
 
