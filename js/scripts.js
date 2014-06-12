@@ -175,6 +175,5 @@ $('a').on('click', function() {
        scrollTop: scrollPoint
    }, 900);
    return false;
-}); 
-
+});
 
