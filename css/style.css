@@ -880,7 +880,6 @@ h6,
 	font: 24px "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
 	color: #4a5c62;
 	margin-top: -20px;
-	text-transform: capitalize;
 	text-align: left;
 }
 
@@ -904,7 +903,6 @@ h6,
 	font-weight:100;
 	color: #4a5c62;
 	margin-top: -20px;
-	text-transform: capitalize;
 	text-align: left;
 }
 
